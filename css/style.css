@@ -70,20 +70,20 @@ body {
 .container-title {
     display: grid;
     grid-template-columns: auto auto;
-    font-size: 0.8em;
     margin-bottom: 10px;
     grid-column: span 2;
     text-align: left;
     color: #333;
     /* border-bottom: 1px solid #ccc; */
     padding-bottom: 5px;
-    margin-top: -2px;
+    margin-top: 2px;
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: -5px;
 }
 
 .container-title-matchday {
+    font-size: 0.5em;
     padding-left: 10px;
     align-items: left;
     font-weight: bold;
@@ -94,7 +94,7 @@ body {
     align-items: right;
     text-align: right;
     color: #777;
-    font-size: 0.85em;
+    font-size: 0.4em;
 }
 
 .match-card {
