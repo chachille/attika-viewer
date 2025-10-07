@@ -39,7 +39,7 @@ body {
 }
 
 .cards-container {
-    display: grid;
+    display: block;
     width: fit-content;
     /* grid-template-columns: auto auto; */
     gap: 5px;
@@ -104,6 +104,7 @@ body {
     font-weight: 600;
     border-radius: 6px;
     padding: 20px;
+    margin: 2px;
     width: 300px;
     height: fit-content;
     /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
