@@ -10,6 +10,7 @@ export async function loadMatches(containerSelector = '.cards-container') {
       // Create matchday title block
       const containerBlock = document.createElement('div');
       containerBlock.className = 'cards-container';
+
       const titleBlock = document.createElement('div');
       titleBlock.className = 'container-title';
 
@@ -68,8 +69,16 @@ export async function loadMatches(containerSelector = '.cards-container') {
           </div>
         `;
 
-        container.appendChild(card);
+        // container.appendChild(card);
+        containerBlock.appendChild(card);
+
+        container.appendChild(containerBlock);
       });
+
+      // const containerSeperator = document.createElement('div');
+      // containerSeperator.className = 'contenair-seperator';
+      // container.appendChild(containerSeperator);
+
     });
   });
 }
