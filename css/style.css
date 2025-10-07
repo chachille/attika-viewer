@@ -70,7 +70,7 @@ body {
 .container-title {
     display: grid;
     grid-template-columns: auto auto;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-bottom: 10px;
     grid-column: span 2;
     text-align: left;
