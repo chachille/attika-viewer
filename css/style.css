@@ -39,9 +39,9 @@ body {
 }
 
 .cards-container {
-    display: block;
+    display: grid;
     width: fit-content;
-    /* grid-template-columns: auto auto; */
+    grid-template-columns: auto auto;
     gap: 5px;
     margin-top: 0;
     margin-bottom: 15px;
