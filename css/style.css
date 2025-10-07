@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Manrope', Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -81,13 +81,13 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: -5px;
-    font-size: 15px !important;
 }
 
 .container-title-matchday {
     padding-left: 10px;
     align-items: left;
     font-weight: bold;
+    font-size: 0.8em !important;
 }
 
 .container-title-dates {
@@ -95,7 +95,7 @@ body {
     align-items: right;
     text-align: right;
     color: #777;
-    font-size: 14px !important;
+    font-size: 0.8em !important
 }
 
 .match-card {
