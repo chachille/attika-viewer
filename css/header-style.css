@@ -1,0 +1,48 @@
+.app-header {
+    background-color: #d0d0d0;
+    padding: 20px 30px 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.app-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #222;
+}
+
+.top-bar-menu {
+    display: none;
+}
+
+.top-bar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* This arranges the <li> items in a row */
+    justify-content: center;
+    /* Optional: centers the menu horizontally */
+    gap: 30px;
+    /* Adds spacing between items */
+}
+
+.top-bar-menu li {
+    display: inline-block;
+    /* Optional: ensures each item behaves like a block */
+}
+
+.top-bar-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 18px;
+    transition: background 0.2s ease;
+}
+
+.top-bar-menu a:hover {
+    background-color: #eee;
+}

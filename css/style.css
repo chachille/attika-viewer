@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Recursive:wght@300..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+
+.page-wrapper {
+    padding: 20px;
+    /* box-sizing: border-box; */
+    display: grid;
+    grid-auto-flow: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    /* Horizontal centering */
+    min-height: auto;
+    /* Full viewport height */
+    margin: 0;
+}
+
+.left-page-block {
+    display: flex;
+    flex-direction: column;
+    /* place-items: center; */
+    width: fit-content;
+}
+
+.right-page-block {
+    display: grid;
+    /* place-items: center; */
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
+.cards-container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    /* border: #ccc 1px solid;
+            border-radius: 8px;
+            padding: 10px;
+    background-color: #f9f9f9;*/
+}
+
+.cards-container-standings {
+    /* display: block; */
+    display: grid;
+    width: fit-content;
+    grid-template-columns: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: #ccc 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.container-title {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    grid-column: span 2;
+    text-align: left;
+    color: #333;
+    /* border-bottom: 1px solid #ccc; */
+    padding-bottom: 5px;
+    margin-top: -2px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -5px;
+}
+
+.container-title-matchday {
+    padding-left: 10px;
+    align-items: left;
+    font-weight: bold;
+}
+
+.container-title-dates {
+    padding-right: 15px;
+    align-items: right;
+    text-align: right;
+    color: #777;
+    font-size: 0.85em;
+}
+
+.match-card {
+    border: 1px solid #ccc;
+    /* font-size: 0.7em; */
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 20px;
+    width: 300px;
+    height: fit-content;
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: auto 25%;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.match-info-grid.hidden {
+    display: none;
+}
+
+.match-info-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    color: #888;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.match-info-date {
+    font-size: 0.7em;
+}
+
+.match-info-venue {
+    font-size: 0.6em;
+}
+
+.match-result-grid {
+    display: grid;
+    gap: 5px;
+    border-right: #ccc 1px solid;
+}
+
+.match-team-grid {
+    display: grid;
+    grid-template-columns: 5% 10% auto 12%;
+    gap: 15px;
+    align-items: center;
+}
+
+.match-team-logo img {
+    display: flex;
+    /* align-items: center; */
+}
+
+.team-badge {
+    max-height: 30px;
+    max-width: 30px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.match-team-name {
+    font-weight: 300;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.home-score,
+.away-score {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.match-winner {
+    padding-left: -5px;
+    margin-right: -5px;
+    font-size: 0.8em;
+}
+
+
+/********   STANDINGS TABLE - TRANSFERED   ********/
+
+.table-container {
+    overflow-x: auto;
+    /* Adds horizontal scrolling on small screens */
+    /* background-color: #3a3a3c; */
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.league-table-card table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.league-table-card th,
+.league-table-card td {
+    padding: 8px 6px;
+    text-align: center;
+    border-bottom: 1px solid #4a4a4a;
+    /* Separator line for rows */
+    font-size: 0.9rem;
+}
+
+.league-table-card td {
+    color: #333;
+}
+
+.league-table-card thead th {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    padding-bottom: 12px;
+}
+
+/* Specific styling for the team name column */
+.league-table-card td:nth-child(2) {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Optional: Add hover effect on rows */
+.league-table-card tbody tr:hover {
+    background-color: #4a4a4a;
+}
