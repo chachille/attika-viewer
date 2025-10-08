@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const view = this.getAttribute("datavalue");
-      navLinks.forEach((item) => item.classList.remove("active"));
-      link.classList.add("active");
 
       switch (view) {
         case "matches":
@@ -22,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
         default:
           console.warn("Unknown view:", view);
       }
+
+      navLinks.forEach((item) => item.classList.remove("active"));
+      link.classList.add("active");
     });
   });
 });
 
 
 export async function loadMatches(containerSelector = '.cards-container') {
-
-  //
-  // Clear Active from previous menu
-  //
-  menuLinks.forEach((item) => item.classList.remove("active"));
 
   const res = await fetch('data/tournaments.json');
   const tournaments = await res.json();
