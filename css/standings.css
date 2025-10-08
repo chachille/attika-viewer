@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+    /* Adds horizontal scrolling on small screens */
+    /* background-color: #3a3a3c; */
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.league-table-card table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.league-table-card th,
+.league-table-card td {
+    padding: 6px 6px;
+    text-align: center;
+    border-bottom: 1px solid #4a4a4a;
+    /* Separator line for rows */
+    font-size: 0.9rem;
+}
+
+.league-table-card thead th {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    padding-bottom: 12px;
+}
+
+/* Specific styling for the team name column */
+.league-table-card td:nth-child(2) {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Optional: Add hover effect on rows */
+.league-table-card tbody tr:hover {
+    background-color: #4a4a4a;
+}
