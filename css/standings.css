@@ -1,3 +1,17 @@
+.cards-container-standings {
+    /* display: block; */
+    display: grid;
+    column-span: all;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: #a0a0a02a 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--card-background-color);
+}
+
 .table-container {
     overflow-x: auto;
     /* Adds horizontal scrolling on small screens */
@@ -15,9 +29,9 @@
 
 .league-table-card th,
 .league-table-card td {
-    padding: 6px 6px;
+    padding: 8px 8px;
     text-align: center;
-    border-bottom: 1px solid #4a4a4a;
+    border-bottom: var(--card-border-color) 1px solid;
     /* Separator line for rows */
     font-size: 0.9rem;
 }
@@ -36,6 +50,6 @@
 }
 
 /* Optional: Add hover effect on rows */
-.league-table-card tbody tr:hover {
-    background-color: #4a4a4a;
+.league-table-card tr:hover {
+    background-color: #b4b4b4;
 }
